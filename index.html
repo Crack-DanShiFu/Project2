@@ -1,0 +1,67 @@
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<div style="margin: auto ;width: 1440px">
+    <ul id="Filtrate" style="list-style: none">
+        <li>
+            <p>Year</p>
+            <select class="Year">
+                <option></option>
+            </select>
+        </li>
+        <li>
+            <p>Region</p>
+            <select class="Region">
+                <option></option>
+            </select>
+        </li>
+        <li>
+            <p>Species</p>
+            <select class="Species">
+                <option></option>
+            </select>
+        </li>
+        <li>
+            <p>Limit</p>
+            <select class="Limit">
+                <option></option>
+                <option>50</option>
+                <option>100</option>
+                <option>500</option>
+            </select>
+        </li>
+        <li>
+            <p style="color: #ffffff">Filter</p>
+            <input type="button" value="Filter">
+        </li>
+    </ul>
+    <div id="DataTable" style="width: 1440px;height: 600px;">
+    </div>
+    <h1>Graphs</h1>
+    <h3>Year</h3>
+    <div id="Year"></div>
+    <div id="Region" style="float: left"></div>
+
+    <div id="Species" style="float: right"></div>
+</div>
+
+</body>
+
+
+<style>
+    #Filtrate {
+        height: 100px;
+        margin-left: 10px;
+    }
+
+    #Filtrate li {
+        float: left;
+        margin: 30px;
+    }
+</style>
+</html>
